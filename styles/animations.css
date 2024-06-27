@@ -50,16 +50,6 @@
   fill: var(--heart-filling-color);
 }
 
-/* .like-icon.is-liked .main-body {
-  transition-delay: 0.05s;
-  fill: var(--heart-filling-color);
-}
-
-.like-icon.is-liked .contour {
-  transition-delay: 0.06s;
-  fill: var(--heart-filling-color);
-} */
-
 .like-icon.is-liked .main-body,
 .like-icon.is-liked .contour {
   transition-delay: 0.05s;
@@ -85,7 +75,7 @@
  transform-origin: center;
 }
 
-@keyframes arrow_shift {
+@keyframes accent {
   0% {
     right: 0px;
   }

@@ -76,10 +76,10 @@
 
 .theme-menu__button:disabled::before {
   content: '▶';
-  animation: arrow_shift 1s infinite;
+  position: absolute;
+  animation: accent 1s infinite;
   animation-timing-function: ease-in-out;
   animation-duration: alternate;
-  position: absolute;
   left: -85px;
   top: 0;
 } 
