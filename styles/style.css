@@ -1,23 +1,7 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace, sans-serif;
   font-variation-settings: 'wght' var(--font-weight-card-text) var(--font-weight-card-title);
   color: var(--accent-color);
   background-color: var(--bg-color);
@@ -27,6 +11,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* //////////////////// HEADER \\\\\\\\\\\\\\\\\\\\\ */
 
 .header {
   border: 2px solid var(--accent-color);
@@ -42,8 +28,8 @@
 }
 
 .header__link {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   display: block;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   padding-block-end: 18px;
   text-decoration: none;
 }
@@ -130,6 +116,8 @@
   width: 100%;
   background-color: var(--accent-color);
 }
+
+/* //////////////////// MAIN_SECTION \\\\\\\\\\\\\\\\\\\\\ */
 
 .main__section {
   max-width: 700px;
@@ -237,6 +225,8 @@
   font-variation-settings: 'wght' var(--font-weight-card-text);
 }
 
+/* //////////////////// BUTTON \\\\\\\\\\\\\\\\\\\\\ */
+
 .button {
   display: flex;
   align-items: center;
@@ -321,6 +311,8 @@
   outline: 2px solid var(--accent-color);
 }
 
+/* //////////////////// DIALOG WINDOW \\\\\\\\\\\\\\\\\\\\\ */
+
 .dialog__button {
   gap: 8px;
   margin-block-start: 54px;
@@ -386,6 +378,8 @@
   display: block;
   max-width: 200px;
 }
+
+/* //////////////////// MEDIA \\\\\\\\\\\\\\\\\\\\\ */
 
 @media (width <= 375px) {
   .header {
