@@ -5,7 +5,7 @@
   font-variation-settings: 'wght' var(--font-weight-card-text) var(--font-weight-card-title);
   color: var(--accent-color);
   background-color: var(--bg-color);
-  background-image: var(--bg-image);                  
+  background-image: var(--bg-image);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
