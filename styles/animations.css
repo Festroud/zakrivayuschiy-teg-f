@@ -17,8 +17,13 @@
   transition: fill 0.3 linear;
 }
 
-.like-icon.is-liked .contour {
+.like-icon .contour {
   fill: var(--accent-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-filling-color);
   transition: fill 0.3 linear;
   transition-delay: 0.6s;
 }
@@ -52,11 +57,6 @@
 .like-icon.is-liked .main-body {
   transition-delay: 0.05s;
   fill: var(--heart-filling-color);
-}
-
-.like-icon .contour {
-  fill: var(--accent-color);
-  transition: fill 0.1s linear;
 }
 
 .like-icon .main-body {
