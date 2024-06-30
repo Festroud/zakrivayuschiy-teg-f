@@ -19,12 +19,11 @@
 
 .like-icon.is-liked .contour {
   fill: var(--accent-color);
-  transition: fill 0.3 linear;
+  transition: fill 0.3 0.06s linear;
   transition-delay: 0.6s;
 }
 
 .like-icon.is-liked .contour {
-  transition: fill 0.0s 0.06s linear;
   fill: var(--heart-filling-color);
 }
 
