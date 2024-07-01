@@ -2,7 +2,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), monospace, sans-serif;
-  font-variation-settings: 'wght' var(--font-weight-card-text) var(--font-weight-card-title);
+  font-variation-settings: 'wght' var(--font-weight-card-text);
   color: var(--accent-color);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -114,7 +114,6 @@
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
-  background-color: var(--accent-color);
 }
 
 /* //////////////////// MAIN_SECTION \\\\\\\\\\\\\\\\\\\\\ */
@@ -366,15 +365,16 @@
 }
 
 .modal__window-form {
-  padding: 30px;
+  padding: 25px 30px;
 }
 
 .modal__window-content {
   display: flex;
+  align-items: center;
 }
 
 .modal__window-text {
-  max-width: 200px;
+  max-width: 236px;
 }
 
 /* //////////////////// MEDIA \\\\\\\\\\\\\\\\\\\\\ */
