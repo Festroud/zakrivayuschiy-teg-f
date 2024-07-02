@@ -312,16 +312,19 @@
 /* //////////////////// DIALOG WINDOW \\\\\\\\\\\\\\\\\\\\\ */
 
 .dialog__button {
+  padding: 20px 15px;
+  width: min(calc(100vw * (306 / 376)), 335px);
+  display: flex;
   gap: 8px;
-  margin-block-start: 54px;
-  margin-block-end: 100px;
-  margin-inline: auto;
-  width: 335px;
-  padding-block: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 54px auto 102px;
 }
 
 .floppy {
-  width: 21px;
+  width: min(28px, calc(28px - (100vw - 1433px)));
+  min-width: 21px;
   height: auto;
   mix-blend-mode: difference;
   position: relative;
@@ -348,20 +351,21 @@
 .modal__window-button {
   text-transform: uppercase;
   height: 38px;
-  width: 293px;
+  width: 100%;
   padding: 0px;
 }
 
 .modal__window:is([open]) .modal__window-form {
-  display: grid;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  align-self: center;
+  align-items: center;
 }
 
 .modal__window:is([open]) .floppy {
   min-width: 39px;
   height: auto;
-  margin-inline-end: 20px;
 }
 
 .modal__window-form {
@@ -370,11 +374,18 @@
 
 .modal__window-content {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .modal__window-text {
-  max-width: 236px;
+  max-width: 234px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.button_ {
+  width: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
 
 /* //////////////////// MEDIA \\\\\\\\\\\\\\\\\\\\\ */
@@ -419,7 +430,7 @@
   }
 
   .modal__window-button {
-    width: 257px;
+    max-width: 257px;
   }
 
   .img__label {
@@ -430,5 +441,20 @@
 .card__text {
   gap: 26px;
   padding: 28px 26px 0px;
+  }
+
+  .modal__window:is([open]) .modal__window-form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .modal__window-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 257px;
   }
 }
